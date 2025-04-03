@@ -10,9 +10,11 @@ Instrucciones de Ejecución:
   
 Enfoque y Solución:
 
-  En primer lugar, se crea un archivo CSV con el ejemplo que dan en el reto técnico. Como puede haber errores en el archivo se usa try, dentro de ello se definen las variables solicitadas y una función para leer el   archivo csv.
+  El enfoque consiste en tratar de leer el archivo CSV y realizar la lectura de los datos que este trae para poder realizar el balance final, comparar los montos y definir el mayor, realizar el conteo de cada       tipo de transacción.
+
+  En primer lugar, se crea un archivo CSV con el ejemplo que dan en el reto técnico. Como puede haber errores en el archivo se usa try, dentro de ello se definen las variables solicitadas y una función para leer    el archivo csv.
   En caso de que el archivo no se haya leído correctamente, se muestran mensajes de error como: "No se encontró el archivo" o "No se puede leer el archivo" el cual detalla el motivo.
-  Si el archivo se pudo leer, se inicia un bucle con for con el cual se recorre el documento csv leyendo los montos y el tipo de transacción que es. Al leer estos datos, se asignan valores al balance final (si es     un crédito se suma el monto, y si es débito se resta el monto) y al conteo del tipo de transacción.
+  Si el archivo se pudo leer, se inicia un bucle con for con el cual se recorre el documento csv leyendo los montos y el tipo de transacción que es. Al leer estos datos, se asignan valores al balance final (si es   un crédito se suma el monto, y si es débito se resta el monto) y al conteo del tipo de transacción.
   Por otro lado, también se compara el monto con el monto mayor hasta el momento y se elige el monto mas alto.
   Luego, se imprimen los valores solicitados.
 
